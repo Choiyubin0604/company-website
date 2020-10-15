@@ -32,7 +32,7 @@ footer .box {
   background: url(../img/bottom_bg.jpg) no-repeat center/cover;
   margin-top: 80px;
 }
-footer .box h2 {
+footer .box.motion h2 {
   color: #fff;
   font-size: 22px;
   font-weight: normal;

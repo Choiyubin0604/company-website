@@ -10,8 +10,9 @@ header {
   position: fixed;
   z-index: 100;
   top: 0;
+}
+header.on {
   background: #fff;
-  margin-bottom: 120px;
 }
 header .logo {
   display: block;

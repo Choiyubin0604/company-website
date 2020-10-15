@@ -176,6 +176,8 @@ section.visual .img img {
   animation-duration: 2s;
 }
 
+/*section.about*/
+
 section.about {
   width: 95%;
   margin: 40px auto;
@@ -237,7 +239,7 @@ section.about .inner .line li:before {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   margin-left: -3px;
   margin-top: -3px;
   animation: dot 1.5s infinite;
@@ -289,35 +291,35 @@ section.about .inner ul li h3 {
   }
 }
 
-section.about .inner h2 {
+section.about .inner.motion h2 {
   animation-name: slid-up;
   animation-duration: 0.8s;
 }
-section.about .inner .line span {
+section.about .inner.motion .line span {
   animation-name: opacity-ani;
   animation-duration: 0.8s;
 }
-section.about .inner .line li.a {
+section.about .inner.motion .line li.a {
   animation-name: opacity-ani;
   animation-duration: 1.2s;
 }
-section.about .inner .line li.b {
+section.about .inner.motion .line li.b {
   animation-name: opacity-ani;
   animation-duration: 1.6s;
 }
-section.about .inner .line li.c {
+section.about .inner.motion .line li.c {
   animation-name: opacity-ani;
   animation-duration: 2s;
 }
-section.about .inner ul li {
+section.about .inner.motion ul li {
   animation-name: slid-up2;
   animation-duration: 2.4s;
 }
-section.about .inner ul li:nth-child(2) {
+section.about .inner.motion ul li:nth-child(2) {
   animation-name: slid-up2;
   animation-duration: 2.6s;
 }
-section.about .inner ul li:nth-child(3) {
+section.about .inner.motion ul li:nth-child(3) {
   animation-name: slid-up2;
   animation-duration: 2.8s;
 }
@@ -334,15 +336,18 @@ section.premium {
   position: relative;
 }
 
-@keyframes widhtAni {
+@keyframes widthAni {
   0% {
     width: 0%;
   }
-  30% {
+  40% {
     width: 0%;
   }
+  100% {
+    width: 100%;
+  }
 }
-section.premium .txtImg {
+section.premium .txtImg.motion {
   position: absolute;
   left: 0;
   top: 20%;
@@ -350,7 +355,7 @@ section.premium .txtImg {
   width: 100%;
   overflow: hidden;
   animation: widthAni;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 section.premium .title {
   position: absolute;
@@ -393,25 +398,25 @@ section.premium .banner li {
 section.premium .banner li img {
   width: 100%;
 }
-section.premium .banner li:nth-child(1) {
+section.premium .banner li:nth-child(1).motion {
   left: 45%;
   top: 15%;
   animation-name: slid-up;
   animation-duration: 2s;
 }
-section.premium .banner li:nth-child(2) {
+section.premium .banner li:nth-child(2).motion {
   left: 37%;
   top: 50%;
   animation-name: slid-up;
   animation-duration: 1.8s;
 }
-section.premium .banner li:nth-child(3) {
+section.premium .banner li:nth-child(3).motion {
   left: 55%;
   top: 62%;
   animation-name: slid-up;
   animation-duration: 2.2s;
 }
-section.premium .banner li:nth-child(4) {
+section.premium .banner li:nth-child(4).motion {
   width: 32%;
   max-width: 580px;
   right: 2%;
@@ -511,19 +516,19 @@ section.global ul li a h3 span {
 section.global ul li a p {
   font-size: 17px;
 }
-section.global ul li {
+section.global.motion ul li {
   animation-name: slid-up;
   animation-duration: 1s;
 }
-section.global ul li:nth-child(2) {
+section.global.motion ul li:nth-child(2) {
   animation-name: slid-up;
   animation-duration: 1.4s;
 }
-section.global ul li:nth-child(3) {
+section.global.motion ul li:nth-child(3) {
   animation-name: slid-up;
   animation-duration: 1.7s;
 }
-section.global ul li:nth-child(4) {
+section.global.motion ul li:nth-child(4) {
   animation-name: slid-up;
   animation-duration: 2s;
 }
