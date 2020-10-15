@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* footer */
+footer {
+  padding: 80px 0 0;
+  text-align: center;
+}
+footer .sns li {
+  display: inline-block;
+  margin-right: 30px;
+}
+footer .footerLogo {
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -6px;
+  color: #39312b;
+  margin: 40px 0 20px;
+}
+footer ul li {
+  font-size: 17px;
+  line-height: 1.4;
+}
+footer ul li .copyright {
+  font-size: 15px;
+  font-weight: 100;
+  display: block;
+  margin-top: 20px;
+  color: #888;
+}
+footer .box {
+  padding: 150px 0;
+  background: url(../img/bottom_bg.jpg) no-repeat center/cover;
+  margin-top: 80px;
+}
+footer .box h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: normal;
+  animation-name: slid-up;
+  animation-duration: 1s;
+}
