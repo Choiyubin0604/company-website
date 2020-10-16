@@ -3,7 +3,7 @@
 /*visual*/
 section.visual {
   margin-top: 120px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   position: relative;
 }
 section.visual:before {
@@ -19,7 +19,20 @@ section.visual .img {
   width: 94%;
   text-align: center;
   position: relative;
+  /* overflow: hidden; */
+}
+section.visual .img .imgBox {
+  display: block;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+}
+/*page number*/
+section.visual .img .page {
+  position: absolute;
+  right: -43px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 section.visual .img img {
   width: 100%;
@@ -40,7 +53,7 @@ section.visual .title p {
 }
 section.visual .menu {
   position: absolute;
-  bottom: 15%;
+  bottom: 13%;
   left: 8%;
 }
 section.visual .menu li {
@@ -121,19 +134,19 @@ section.visual .img .mask.d {
     background: rgba(0, 0, 0, 0.8);
   }
 }
-section.visual .img .mask.a {
+section.visual .slick-active .img .mask.a {
   animation-name: mask;
   animation-duration: 0.4s;
 }
-section.visual .img .mask.b {
+section.visual .slick-active .img .mask.b {
   animation-name: mask;
   animation-duration: 0.6s;
 }
-section.visual .img .mask.c {
+section.visual .slick-active .img .mask.c {
   animation-name: mask;
   animation-duration: 0.8s;
 }
-section.visual .img .mask.d {
+section.visual .slick-active .img .mask.d {
   animation-name: mask;
   animation-duration: 1s;
 }
@@ -148,11 +161,11 @@ section.visual .img .mask.d {
   }
 }
 
-section.visual .title h2 {
+section.visual .slick-active .title h2 {
   animation-name: slid-up;
   animation-duration: 1.5s;
 }
-section.visual .title p {
+section.visual .slick-active .title p {
   animation-name: slid-up;
   animation-duration: 2.2s;
 }
@@ -170,12 +183,33 @@ section.visual .menu {
   }
 }
 
-section.visual .img img {
+section.visual .slick-active .imgBox img {
   transform: scale(1);
   animation-name: scaleani;
-  animation-duration: 2s;
+  animation-duration: 5.2s;
 }
 
+/*visual-slick-dots*/
+.slick-dots {
+  position: absolute;
+  right: 4%;
+  bottom: 0px;
+}
+.slick-dots li button {
+  text-indent: -9999px;
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.slick-dots li:last-child button {
+  margin-bottom: 0px;
+}
+.slick-dots li.slick-active button {
+  background: #39312b;
+}
 /*section.about*/
 
 section.about {
@@ -200,7 +234,7 @@ section.about .inner h2 {
   font-weight: normal;
 }
 section.about .inner .line {
-  width: 35%;
+  width: 40%;
   margin: 80px auto;
   position: relative;
 }
@@ -254,7 +288,7 @@ section.about .inner .line li:before {
 }
 
 section.about .inner ul {
-  width: 60%;
+  width: 75%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -531,4 +565,76 @@ section.global.motion ul li:nth-child(3) {
 section.global.motion ul li:nth-child(4) {
   animation-name: slid-up;
   animation-duration: 2s;
+}
+
+@media screen and (max-width: 1460px) {
+  section.about .inner ul li {
+    font-size: 15px;
+  }
+}
+/*1100px~951px*/
+@media screen and (max-width: 1100px) {
+  /*visual*/
+  section.visual {
+    margin-top: 60px;
+  }
+  section.visual .img img {
+    width: auto;
+    height: 100%;
+  }
+  section.visual .title {
+    left: 5%;
+  }
+  section.visual .menu {
+    width: 100%;
+    left: 5%;
+  }
+  section.visual .menu li {
+    margin-right: 20px;
+  }
+  section.visual .menu li a p {
+    font-size: 16px;
+  }
+  .slick-dots {
+    right: 2.5%;
+  }
+  /*about*/
+  section.about {
+    width: 100%;
+    height: 600px;
+  }
+  section.about img {
+    height: 100%;
+    width: auto;
+  }
+  section.about .inner ul {
+    width: 80%;
+  }
+  section.about .inner ul li {
+    width: 50%;
+  }
+  section.about .inner ul li:nth-child(3) {
+    margin-left: 25%;
+  }
+  /*premium*/
+  section.premium {
+    width: 100%;
+    height: 800px;
+  }
+  section.premium .title {
+    left: 5%;
+  }
+  section.premium .textImg {
+    left: 5px;
+  }
+  /*global*/
+  section.global {
+    width: 100%;
+  }
+  section.global ul li {
+    padding: 10px;
+  }
+  section.global ul li a p {
+    font-size: 15px;
+  }
 }

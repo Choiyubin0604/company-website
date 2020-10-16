@@ -169,3 +169,26 @@ body {
   animation-duration: 1.7s;
   transition: 0.8s ease-in-out;
 }
+
+/*mobile*/
+/*nav*/
+header .open {
+  display: none;
+}
+header .close {
+  display: none;
+}
+/*br*/
+br.mo {
+  display: none;
+}
+
+/*1100px~ 951px*/
+@media screen and (max-width: 1100px) {
+  .wrap {
+    min-width: 100%;
+  }
+  .sub_visual {
+    margin-top: 60px;
+  }
+}
