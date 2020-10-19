@@ -381,13 +381,15 @@ section.premium {
     width: 100%;
   }
 }
-section.premium .txtImg.motion {
+section.premium .txtImg {
   position: absolute;
   left: 0;
   top: 20%;
   display: block;
   width: 100%;
   overflow: hidden;
+}
+section.premium .txtImg.motion {
   animation: widthAni;
   animation-duration: 2.5s;
 }
@@ -401,7 +403,7 @@ section.premium .title h2 {
   margin-bottom: 20px;
 }
 section.premium .title p {
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -538,7 +540,7 @@ section.global ul li a:focus .img {
   box-shadow: 15px 18px 10px rgba(0, 0, 0, 0.35);
 }
 section.global ul li a h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin: 40px 0 15px;
 }
 section.global ul li a h3 span {
@@ -636,5 +638,194 @@ section.global.motion ul li:nth-child(4) {
   }
   section.global ul li a p {
     font-size: 15px;
+  }
+}
+
+/*950px~751px*/
+@media screen and (max-width: 950px) {
+  /*visual*/
+  section.visual .title h2 {
+    font-size: 40px;
+  }
+  section.visual .title p {
+    font-size: 18px;
+  }
+  section.visual .menu {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  /*about*/
+  section.about .inner h2 {
+    font-size: 25px;
+  }
+  section.about .inner .line {
+    width: 65%;
+  }
+  section.about .inner ul {
+    width: 95%;
+  }
+  section.about .inner li {
+    width: 33.333333%;
+    font-size: 12px;
+  }
+  section.about .inner li:nth-child(3) {
+    margin-left: 0;
+  }
+  /*premium*/
+  section.premium .title {
+    width: 100%;
+    left: 0;
+    top: 20px;
+    text-align: center;
+  }
+  section.premium .txtImg {
+    height: 60px;
+    left: 20px;
+    top: 28%;
+  }
+  section.premium .txtImg img {
+    height: 100%;
+  }
+  section.premium .banner {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    height: 500px;
+  }
+  section.premium .banner li:nth-child(1).motion {
+    left: 15%;
+    width: 22%;
+  }
+  section.premium .banner li:nth-child(2).motion {
+    left: 8%;
+    width: 22%;
+  }
+  section.premium .banner li:nth-child(3).motion {
+    left: 38%;
+    width: 22%;
+  }
+  section.premium .banner li:nth-child(4).motion {
+    left: 50%;
+    width: 48%;
+  }
+  section.premium .title h2,
+  section.global .title h2 {
+    font-size: 20px;
+  }
+  section.premium .title p,
+  section.global .title p {
+    font-size: 13px;
+  }
+  /*global*/
+  section.global ul {
+    width: 95%;
+    margin: auto;
+  }
+  section.global.motion ul li {
+    width: 50%;
+  }
+  section.global ul li a h3 {
+    font-size: 15px;
+  }
+  section.global ul li a h3 span {
+    font-size: 13px;
+  }
+  section.global ul li a p {
+    font-size: 13px;
+  }
+  section.global:before {
+    height: 38%;
+  }
+}
+/*750px이하 모바일*/
+@media screen and (max-width: 750px) {
+  /*visual*/
+  section.visual {
+    height: 80vh;
+    overflow: hidden;
+  }
+  section.visual .img {
+    width: 87%;
+  }
+  section.visual .img img {
+    height: 87vh;
+    width: auto;
+  }
+  section.visual .img .page img {
+    width: 75%;
+    height: auto;
+    margin-left: 8%;
+  }
+  br.mo {
+    display: block;
+  }
+  section.visual .title h2 {
+    font-size: 28px;
+  }
+  section.visual .title p {
+    font-size: 14px;
+  }
+  .slick-dots {
+    right: 20px;
+    bottom: 60px;
+  }
+  /*about*/
+  section.about .inner.motion h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  section.about .inner .line {
+    display: none;
+  }
+  section.about .inner ul li {
+    width: 100%;
+    margin: 20px 0 0;
+    font-size: 13px;
+  }
+  section.about .inner ul li h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  section.about .inner ul li:nth-child(3) {
+    margin-left: 0;
+  }
+  /*premium*/
+  section.premium {
+    height: 685px;
+  }
+  section.premium .title p {
+    margin-bottom: 20px;
+  }
+  section.premium .title a {
+    font-size: 18px;
+  }
+  section.premium .title a:before {
+    width: 60px;
+    height: 12px;
+  }
+  section.premium .txtImg {
+    left: 0;
+    height: 32px;
+    text-align: center;
+  }
+  section.premium .banner {
+    height: 400px;
+    width: 100%;
+  }
+  section.premium .banner li:nth-child(1).motion {
+    left: 10%;
+  }
+  section.premium .banner li:nth-child(2).motion {
+    left: 5%;
+  }
+  section.premium .banner li:nth-child(3).motion {
+    left: 37%;
+  }
+  section.premium .banner li:nth-child(4).motion {
+    left: 44%;
+    top: -2%;
   }
 }

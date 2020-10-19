@@ -9,6 +9,9 @@ footer .sns li {
   display: inline-block;
   margin-right: 30px;
 }
+footer .sns li:last-child {
+  margin-right: 0px;
+}
 footer .footerLogo {
   font-size: 40px;
   font-weight: 900;
@@ -38,4 +41,27 @@ footer .box.motion h2 {
   font-weight: normal;
   animation-name: slid-up;
   animation-duration: 1s;
+}
+/*950px~751px*/
+@media screen and (max-width: 950px) {
+  footer {
+    padding-top: 50px;
+  }
+  footer .footerLogo {
+    font-size: 28px;
+    letter-spacing: -4px;
+  }
+  footer ul li {
+    font-size: 13px;
+  }
+  footer ul li .copyright {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  footer .box {
+    padding: 80px 0px;
+  }
+  footer .box.box.motion h2 {
+    font-size: 18px;
+  }
 }
