@@ -124,3 +124,10 @@ header nav .gnb li a:focus:after {
     display: none;
   }
 }
+/*750px이하 모바일*/
+@media screen and (max-width: 750px) {
+  header .logo {
+    font-size: 25px;
+    letter-spacing: -3px;
+  }
+}

@@ -42,7 +42,7 @@ footer .box.motion h2 {
   animation-name: slid-up;
   animation-duration: 1s;
 }
-/*950px~751px*/
+
 @media screen and (max-width: 950px) {
   footer {
     padding-top: 50px;
@@ -50,6 +50,9 @@ footer .box.motion h2 {
   footer .footerLogo {
     font-size: 28px;
     letter-spacing: -4px;
+  }
+  footer ul {
+    padding: 20px;
   }
   footer ul li {
     font-size: 13px;
@@ -63,5 +66,26 @@ footer .box.motion h2 {
   }
   footer .box.box.motion h2 {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer .box {
+    padding: 50px 0px;
+  }
+  footer .box.box.motion h2 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  footer .box.box.motion h2 {
+    font-size: 13px;
+  }
+  footer ul li {
+    font-size: 11px;
+  }
+  footer ul li .copyright {
+    font-size: 11px;
   }
 }

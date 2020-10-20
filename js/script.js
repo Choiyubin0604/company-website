@@ -38,3 +38,19 @@ $(function(){
         pauseOnFocus:false
     })
 })
+
+//mobile nav
+
+
+$(function() {
+    $('header .open').on('click', function() {
+        $('body').css({'overflow': 'hidden'});   //스크롤하지 못하게 막음
+        $('header .bg').css({'display': 'block'});
+        $('header nav').addClass('on');
+	});
+    $('header .close, .section').on('click', function() {
+        $('body').css({'overflow': 'auto'});
+        $('header .bg').css({'display': 'none'});
+        $('header nav').removeClass('on');
+	});	
+});
