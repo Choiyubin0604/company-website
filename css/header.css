@@ -93,7 +93,7 @@ header nav .gnb li a:focus:after {
     z-index: 300;
   }
   header nav.on {
-    width: 30%;
+    width: 60%;
     max-width: 300px;
   }
   header nav .close {
