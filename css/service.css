@@ -216,6 +216,9 @@
   .service_text .text_img {
     width: 100%;
   }
+  .service_text {
+    align-items: initial;
+  }
 }
 /*500px이하 모바일*/
 @media screen and (max-width: 500px) {
