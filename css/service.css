@@ -148,7 +148,7 @@
 }
 .process_container .process_box .process .icon_text p {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   padding: 15px 0px;
   box-sizing: border-box;
 }
@@ -183,7 +183,8 @@
   .service_text .text {
     padding: 20px;
   }
-  .service_text .text h4 {
+  .service_text .text h4,
+  .process_container h3 {
     font-size: 18px;
   }
   .service_text .text span {
@@ -197,7 +198,27 @@
   }
 }
 @media screen and (max-width: 750px) {
+  .service_text_container {
+    width: 95%;
+  }
   .process_container .process_box .process::after {
     display: none;
+  }
+  .process_container .process_box .process .icon_text p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .service_text {
+    flex-direction: column;
+  }
+  .service_text .text_img {
+    width: 100%;
+  }
+}
+/*500px이하 모바일*/
+@media screen and (max-width: 500px) {
+  .service_text .text_img {
+    height: 200px;
   }
 }
