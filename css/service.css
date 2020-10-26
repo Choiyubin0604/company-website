@@ -217,7 +217,7 @@
     width: 100%;
   }
   .service_text {
-    align-items: initial;
+    align-items: stretch;
   }
 }
 /*500px이하 모바일*/
