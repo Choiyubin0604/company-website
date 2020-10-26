@@ -14,7 +14,8 @@
      <script src="../js/jquery-3.3.1.min.js"></script>
      <script src="../js/scrolla.jquery.min.js"></script>
      <script src="../js/script.js"></script>
-     <script src="../js/script.js"></script>
+     <script src="../js/contact.js"></script>
+ 
 </head>
 <body>
    <div class="wrap">
@@ -34,15 +35,35 @@
             </ul>
         </nav>
     </header>
-       <section class="sub_visual about_visual">
+       <section class="sub_visual contact_visual">
            <!-- <img src="../img/about_title.jpg" alt=""> -->
            <div class="sub_title">
                <h2>CONTACT</h2>
                <p>Global Concierge Services</p>
            </div>
        </section>
-       <section class="sub_top animate" data-animate="motion">
-            <h3>공지사항</h3>
+        <section class="tab_container">
+            <div class="tab">
+                <button class="tablinks active" onclick="openCity(event, 'faq')">FAQ</button>
+                <button class="tablinks" onclick="openCity(event, 'notice')">notice</button>
+                <button class="tablinks" onclick="openCity(event, 'apply')">apply</button>
+              </div>
+              
+              <!-- Tab content -->
+              <div id="faq" class="tabcontent" style="display: block;">
+                <h3>faq</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis possimus eos molestias sapiente aliquam doloribus, odit reprehenderit culpa libero? Aliquid vitae rerum consequuntur blanditiis unde nisi beatae nam et.</p>
+              </div>
+              
+              <div id="notice" class="tabcontent">
+                <h3>notice</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptas aliquam, cum, aspernatur molestiae animi veniam tempora repudiandae praesentium modi veritatis. Hic eos voluptas nam iusto eius nesciunt voluptatum ipsam..</p>
+              </div>
+              
+              <div id="apply" class="tabcontent">
+                <h3>apply</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nostrum ratione? Praesentium, expedita ratione amet dicta optio a laudantium, odio et magni nulla ducimus quibusdam repellat eum esse consequatur laborum.</p>
+              </div>
         </section>
        <!-- footer -->
        <footer>

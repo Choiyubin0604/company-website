@@ -1,4 +1,82 @@
-.about_visual {
+.contact_visual {
   background: url(../img/contact_title.jpg) no-repeat center/cover;
   background-attachment: fixed;
+}
+.tab_container {
+  width: 85%;
+  margin: 50px auto;
+}
+.tab {
+  overflow: hidden;
+  display: flex;
+}
+
+.tab button {
+  font-size: 20px;
+  color: #666;
+  font-weight: 100;
+  flex-grow: 1;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  position: relative;
+}
+.tab button::before {
+  content: "";
+  width: 0%;
+  height: 15px;
+  background: #cec2be;
+  position: absolute;
+  bottom: 13px;
+  z-index: -1;
+}
+.tab button:hover::before,
+.tab button:focus::before,
+.tab button.active::before {
+  width: 50px;
+  transition: all 0.3s;
+}
+.tab button.active {
+  font-weight: normal;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+.tabcontent {
+  display: none;
+  box-sizing: border-box;
+  padding: 100px;
+}
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+.tabcontent h3 {
+  display: block;
+  padding: 15px 0px;
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*faq_area*/
+
+@media screen and (max-width: 650px) {
+  .tab,
+  .tab button {
+    width: 100%;
+    display: block;
+  }
+  .tab button.active {
+    border-bottom: 1px solid #ccc;
+  }
+  .tabcontent {
+    padding: 50px;
+  }
 }

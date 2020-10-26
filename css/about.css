@@ -96,6 +96,13 @@
     font-size: 12px;
   }
 }
+@media screen and (max-width: 600px) {
+  .history_container .history_text_box h4 {
+    padding: 30px 0px;
+    font-size: 18px;
+  }
+}
+
 /*500px이하 모바일*/
 @media screen and (max-width: 500px) {
   .history_container .history_text_box .history_text .text {
