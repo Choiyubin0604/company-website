@@ -110,6 +110,19 @@ body {
   overflow: hidden;
 }
 
+/*mobile*/
+/*nav*/
+header .open {
+  display: none;
+}
+header .close {
+  display: none;
+}
+/*br*/
+br.mo {
+  display: none;
+}
+
 /*sub_visual*/
 
 @keyframes slid-up {
@@ -167,21 +180,47 @@ body {
   font-size: 14px;
   font-weight: normal;
   animation-name: slid-up;
-  animation-duration: 1.7s;
+  animation-duration: 1.2s;
   transition: 0.8s ease-in-out;
 }
 
-/*mobile*/
-/*nav*/
-header .open {
-  display: none;
+.sub_top {
+  margin-bottom: 50px;
 }
-header .close {
-  display: none;
+.sub_top h3 {
+  font-size: 28px;
+  font-weight: 900;
+  display: block;
+  text-align: center;
+  color: #573930;
+  letter-spacing: -0.25px;
 }
-/*br*/
-br.mo {
-  display: none;
+.sub_top p::before {
+  content: "■";
+  display: block;
+  text-align: center;
+}
+.sub_top p {
+  font-size: 16px;
+  font-weight: 200;
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  letter-spacing: -0.25px;
+  line-height: 38px;
+  color: #573930;
+}
+
+.sub_top.motion h3 {
+  animation-name: slid-up;
+  animation-duration: 1.4s;
+  transition: 0.8s ease-in-out;
+}
+.sub_top.motion p {
+  animation-name: slid-up;
+  animation-duration: 2s;
+  transition: 0.8s ease-in-out;
 }
 
 /*1100px~ 951px*/
@@ -191,5 +230,26 @@ br.mo {
   }
   .sub_visual {
     margin-top: 60px;
+  }
+}
+
+/*750px이하 모바일*/
+@media screen and (max-width: 750px) {
+  .sub_visual {
+    margin-bottom: 50px;
+    padding: 80px 0;
+  }
+  .sub_title h2 {
+    font-size: 25px;
+  }
+  .sub_title p {
+    font-size: 12px;
+  }
+  .sub_top h3 {
+    font-size: 23px;
+  }
+  .sub_top p {
+    font-size: 14px;
+    line-height: 28px;
   }
 }

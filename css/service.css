@@ -1,4 +1,197 @@
-.about_visual {
+.service_visual {
   background: url(../img/service_title.jpg) no-repeat center/cover;
   background-attachment: fixed;
+}
+.service_text_container {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #666;
+}
+
+@keyframes slid-up {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+
+@keyframes scaleani {
+  0% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+}
+
+.service_text {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.service_text .text_img {
+  flex-shrink: 0;
+  width: 400px;
+  height: 350px;
+  overflow: hidden;
+}
+.service_text .text {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-direction: column;
+  text-align: left;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.service_text.motion .text_img img {
+  transform: scale(1);
+  animation-name: scaleani;
+  animation-duration: 2s;
+}
+.service_text.motion:nth-child(1) {
+  animation-name: slid-up;
+  animation-duration: 1.6s;
+  transition: 0.8s ease-in-out;
+}
+.service_text.motion:nth-child(2) {
+  animation-name: slid-up;
+  animation-duration: 1.6s;
+  transition: 0.8s ease-in-out;
+}
+.service_text.motion:nth-child(3) {
+  animation-name: slid-up;
+  animation-duration: 1.6s;
+  transition: 0.8s ease-in-out;
+}
+.service_text .text h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.service_text .text span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+}
+.service_text .text p {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: -0.25px;
+  line-height: 28px;
+}
+.process_container h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+  box-sizing: border-box;
+  padding: 50px 0px;
+}
+.process_container {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.process_container .process_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.process_container .process_box .process {
+  flex: 1 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+@keyframes twi {
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+.process_container .process_box .process::after {
+  content: "";
+  display: inline-block;
+  width: 39px;
+  height: 20px;
+  background: url(../img/process_arrow.png);
+  position: absolute;
+  right: -18%;
+  top: 50%;
+  margin-top: -15px;
+  animation: 1.5s infinite linear twi;
+}
+.process_container .process_box .process:last-child::after {
+  display: none;
+}
+.process_container .process_box .process .process_icon {
+  font-size: 20px;
+}
+
+.process_container .process_box .process .icon_text p::before {
+  content: "－";
+  display: block;
+  text-align: center;
+}
+.process_container .process_box .process .icon_text p {
+  font-size: 18px;
+  font-weight: 800;
+  padding: 15px 0px;
+  box-sizing: border-box;
+}
+
+.process_container .process_box .process .icon_text span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+}
+/*1100px~951px*/
+@media screen and (max-width: 1100px) {
+  .service_text {
+    width: 100%;
+  }
+  /* .process_container .process_box .process::after {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 950px) {
+  .service_text .text_img {
+    width: 350px;
+    height: 300px;
+  }
+  .service_text .text {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .service_text .text_img {
+    width: 300px;
+    height: 250px;
+  }
+  .service_text .text {
+    padding: 20px;
+  }
+  .service_text .text h4 {
+    font-size: 18px;
+  }
+  .service_text .text span {
+    font-size: 12px;
+  }
+  .service_text .text p {
+    font-size: 14px;
+  }
 }
